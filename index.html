@@ -2,20 +2,48 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <title>Gerbera untukmu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bunga Gerbera</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
     <div class="flowers">
-      <div class="flower flower1"></div>
-      <div class="flower flower2"></div>
-      <div class="flower flower3"></div>
+      <div class="flower-wrapper">
+        <svg class="gerbera" viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="20" fill="#FFD700"/>
+          <g class="petals">
+            <!-- Petals -->
+            {% for i in range(12) %}
+            <ellipse cx="100" cy="60" rx="15" ry="40" fill="#FF69B4" transform="rotate({{i*30}} 100 100)" />
+            {% endfor %}
+          </g>
+        </svg>
+      </div>
+      <div class="flower-wrapper">
+        <svg class="gerbera" viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="20" fill="#FFD700"/>
+          <g class="petals">
+            {% for i in range(12) %}
+            <ellipse cx="100" cy="60" rx="15" ry="40" fill="#FF69B4" transform="rotate({{i*30}} 100 100)" />
+            {% endfor %}
+          </g>
+        </svg>
+      </div>
+      <div class="flower-wrapper">
+        <svg class="gerbera" viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="20" fill="#FFD700"/>
+          <g class="petals">
+            {% for i in range(12) %}
+            <ellipse cx="100" cy="60" rx="15" ry="40" fill="#FF69B4" transform="rotate({{i*30}} 100 100)" />
+            {% endfor %}
+          </g>
+        </svg>
+      </div>
     </div>
     <div class="message">
-      <p>Terima kasih telah menjadi bagian dari hidupku. Meski waktu terus berjalan, kenangan bersamamu akan tetap mekar, seperti bunga ini.</p>
+      <p>Terima kasih telah menjadi bagian dari hidupku. Seperti bunga ini, semoga kenangan kita terus mekar.</p>
     </div>
   </div>
-  <script src="script.js"></script>
 </body>
 </html>
